@@ -1,12 +1,14 @@
 // Specific CSS for your home-page
 .home-wrapper {
-  background-image: url(https://res.cloudinary.com/therainycloud/image/upload/v1595073500/Surf-forecast/top-view-photo-of-person-surfing-4712714_1_c1lv5c.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.0)), url(https://res.cloudinary.com/therainycloud/image/upload/v1600259796/pexels-pixabay-416676_hdspio.jpg);
   height: 100vh;
   background-size: cover;
 }
 
 .container {
-  margin: 0px 10px;
+
+  width: 1100px;
+  margin: auto;
 }
 
 .hero-titles {
@@ -14,12 +16,64 @@
   color: white;
   font-family: avenir;
   h1 {
-    font-size: 48px;
+    font-size: 75px;
   }
 }
 
-.beach-cards {
   h3 {
     color: white;
   }
-}
+  .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  }
+  .card-category {
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+
+// // Smallest device
+// @media (min-width: 100px) and (max-width: 575px) {
+//   .cards {
+//     grid-template-columns: 1fr;
+//   }
+// }
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
+//   .cards {
+//     grid-template-columns: 1fr;
+//   }
+// }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+//   .cards {
+//     grid-template-columns: 1fr 1fr;
+//   }
+// }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+//   .cards {
+//     grid-template-columns: 1fr 1fr 1fr;
+//   }
+// }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+//   .cards {
+//     grid-template-columns: 1fr 1fr 1fr;
+//   }
+// }

@@ -3,12 +3,14 @@
     <div class="hero-titles">
       <h1>Surf in <br> Barcelona</h2>
     </div>
-      <div class="beach-cards">
         <h3>Our Spots</h3>
+        <div class="cards">
         <% @beaches.each do |beach| %>
-          <%= @beach.photo %>
-          <%= @beach.name %>
+          <%= link_to beach_path(beach) do  %>
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/therainycloud/image/upload/v1600260094/images_tsfrqa.jpg)">
+              <%= beach.name %>
+            </div>
           <% end %>
-      </div>
+        <% end %>
   </div>
 </div>
